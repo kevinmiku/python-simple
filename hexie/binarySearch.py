@@ -19,7 +19,7 @@ class BinarySearch(object):
         :return: index of the search key
         """
         low = 0
-        high = len(arr)
+        high = len(arr) - 1
         while low <= high:
             middle = (low + high) / 2
             middle_key = arr[middle]
@@ -34,8 +34,8 @@ class BinarySearch(object):
 
 if __name__ == '__main__':
     bc = BinarySearch()
-    arr = [1, 3, 7, 8, 10, 12]
-    key = 8
+    arr = [1, 3]
+    key = 3
     ind = bc.search(arr, key)
     if ind != -1:
         print "find the key:" + str(key) + "at the arr" + str(ind)
