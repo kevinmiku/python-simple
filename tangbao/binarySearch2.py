@@ -38,4 +38,4 @@ class BinarySearch(object):
         a.sort()  # list升序排序
         result = search(a,key)
         if result != -1:
-            print "key位置：",result
+            print ("key位置：",result)

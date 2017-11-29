@@ -21,7 +21,7 @@ class BinarySearch(object):
         low = 0
         high = len(arr) - 1
         while low <= high:
-            middle = (low + high) / 2
+            middle = (low + high) // 2
             middle_key = arr[middle]
             if middle_key < key:
                 low = middle + 1
@@ -34,9 +34,9 @@ class BinarySearch(object):
 
 if __name__ == '__main__':
     bc = BinarySearch()
-    arr = [1, 3]
-    key = 3
+    arr = [1, 3, 4, 5, 6]
+    key = 5
     ind = bc.search(arr, key)
     if ind != -1:
-        print "find the key:" + str(key) + "at the arr" + str(ind)
+        print ("find the key:" + str(key) + "at the arr" + str(ind))
 
