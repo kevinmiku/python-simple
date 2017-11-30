@@ -1,7 +1,9 @@
 # coding=utf-8
-'''
-   冒泡排序
-'''
+"""
+
+冒泡排序
+
+"""
 class BubbleSort(object):
     def sort(arr):
         i = 0
