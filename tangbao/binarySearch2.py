@@ -1,11 +1,11 @@
 #coding=utf-8
 class BinarySearch(object):
-    def search(a,key):
+    def search(self, a, key):
         low = 0
         high = len(a) - 1
         # print(high)
         while high >= low:
-            mid = (high + low) / 2
+            mid = (high + low) // 2
             midValue = a[mid]
             if a[mid] < key:
                 if mid == len(a) - 1:
@@ -32,10 +32,13 @@ class BinarySearch(object):
                 return mid
         return -1
 
-    if __name__ == '__main__':
-        a = [1, 3, 7, 8, 10, 12]
-        key = 8
-        a.sort()  # list升序排序
-        result = search(a,key)
-        if result != -1:
-            print ("key位置：",result)
+if __name__ == '__main__':
+    bc = BinarySearch()
+    a = [1, 3, 7, 8, 10, 12]
+    key = 8
+    a.sort()  # list升序排序
+    result = bc.search(a, key)
+    if result != -1:
+        print("key位置：", result)
+
+
