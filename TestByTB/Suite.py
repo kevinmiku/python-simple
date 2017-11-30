@@ -6,7 +6,9 @@ by tangbao
 运行binarySearchTest.py里的测试用例
 
 """
-from test import TestBinarySearchByTB
+from TestByTB import TestBinarySearchByTB
+
+
 #定义一个测试集合管理case
 def suite1():
     suiteTest = unittest.TestSuite()
