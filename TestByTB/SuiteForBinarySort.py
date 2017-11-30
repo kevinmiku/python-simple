@@ -15,14 +15,17 @@ def suite1():
     suiteTest.addTest(TestBinarySearchByTB.TestBS("test_case1"))
     suiteTest.addTest(TestBinarySearchByTB.TestBS("test_case2"))
     return suiteTest
+
 def suite2():
     suiteTest = unittest.TestSuite()
     suiteTest.addTest(TestBinarySearchByTB.TestBS("test_case1"))
     suiteTest.addTest(TestBinarySearchByTB.TestBS("test_case2"))
     return suiteTest
+
 def AllSuite():
     allTest = unittest.TestSuite((suite1(),suite2()))
     return allTest
+
 if __name__ == '__main__':
     #通过一个测试集合管理case 运行两种方案
     #第一种

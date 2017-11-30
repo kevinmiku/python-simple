@@ -12,14 +12,16 @@ class TestBS(unittest.TestCase):
     def setUp(self):
         print("test start!")
         self.bs = binarySearch2.BinarySearch()
+
     #测试用例执行后
     def tearDown(self):
         print("test down")
 
     def test_case1(self):
-        arry = [4,6,7]
+        arry = [4, 6, 7]
         key = 6
         self.assertEqual(1, self.bs.search(arry, key))
+
     def test_case2(self):
         array = [1]
         key = 0
