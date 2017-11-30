@@ -14,7 +14,8 @@ class SectionSort():
                     index = i + 1
             arr[j], arr[index] = arr[index], arr[j]
         return arr
-if __name__ == '__main__':
-    array = [3, 1, 6, 9, 11, 0]
-    ss = SectionSort()
-    print(ss.sort(array))
+
+# if __name__ == '__main__':
+#     array = [3, 1, 6, 9, 11, 0]
+#     ss = SectionSort()
+#     print(ss.sort(array))
