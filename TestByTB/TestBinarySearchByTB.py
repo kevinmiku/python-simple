@@ -25,5 +25,5 @@ class TestBS(unittest.TestCase):
     def test_case2(self):
         array = [1]
         key = 0
-        self.assertEqual(-1,self.bs.search(array, key))
+        self.assertEqual(-1, self.bs.search(array, key))
 

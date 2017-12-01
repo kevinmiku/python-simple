@@ -5,6 +5,7 @@ class TestBubble(unittest.TestCase):
     def setUp(self):
         self.bs = BubbleSort.BubbleSort()
         print("Test BubbleSort start~")
+
     def tearDown(self):
         print("Bubble Sort test over!")
 
