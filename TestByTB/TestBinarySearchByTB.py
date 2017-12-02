@@ -1,6 +1,6 @@
 # coding=utf-8
 import unittest
-from tangbao import binarySearch2
+from tangbao import binarySearch
 """
 by tangbao
 
@@ -11,7 +11,7 @@ class TestBS(unittest.TestCase):
     #测试用例执行前
     def setUp(self):
         print("test start!")
-        self.bs = binarySearch2.BinarySearch()
+        self.bs = binarySearch.BinarySearch()
 
     #测试用例执行后
     def tearDown(self):
