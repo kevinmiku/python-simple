@@ -50,6 +50,7 @@ if __name__ == '__main__':
     #request = {'type':'Email', 'content': '我就是条邮件', 'send_time': '2017-12-07 16:44'}
     # message = "GET / HTTP/1.1\r\n\r\n"
     #remote_ip = socket.gethostbyname(host)
+    
     c.start_client()
     c.send_requestC()
 
