@@ -14,7 +14,8 @@ class Server(object):
     port2 = 8081
     try:
         HOST_IP = socket.gethostbyname(host)
-        servertHostName = socket.gethostname()
+        #servertHostName = socket.gethostname()
+        servertHostName = '127.0.0.1'
     except socket.error:
         print("failed to get host")
 

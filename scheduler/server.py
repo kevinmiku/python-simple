@@ -13,7 +13,9 @@ class Server:
 
     def start(self):
         self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        print((config.Server.servertHostName, config.Server.port2))
         self.server.bind((config.Server.servertHostName, config.Server.port2)) #绑定端口
+        print(1)
         self.server.listen(5)
 
     def listen(self):
